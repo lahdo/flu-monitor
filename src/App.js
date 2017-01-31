@@ -1,38 +1,44 @@
 import React, {Component} from 'react';
 import './App.css';
-import { Grid, Navbar, Jumbotron, Button } from 'react-bootstrap';
+import {Grid, Navbar, Jumbotron, Button, Row, Col, PageHeader, ListGroup, ListGroupItem} from 'react-bootstrap';
+import FluMap from './components/FluMap.js';
 
 class App extends Component {
     render() {
         return (
-        <div>
-            <Navbar inverse fixedTop>
-                <Grid>
+            <div>
+                <Navbar inverse fixedTop>
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/">React App</a>
+                            <a href="/">Flu Monitor</a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
-                </Grid>
-            </Navbar>
-            <Jumbotron>
+                </Navbar>
+                <Jumbotron className="flu-monitor">
+                    <Grid>
+                        <h1>Occurrences of the flu</h1>
+                        <p>Select the country below to see where people have flu sympthons.</p>
+                    </Grid>
+                </Jumbotron>
                 <Grid>
-                    <h1>Welcome to React</h1>
-                    <p>
-                        <Button
-                            bsStyle="success"
-                            bsSize="large"
-                            href="http://react-bootstrap.github.io/components.html"
-                            target="_blank">
-                            View React Bootstrap Docs
-                        </Button>
-                    </p>
+                    <Row>
+                        <Col md={3}>
+                            <ListGroup>
+                                <ListGroupItem href="">Poland</ListGroupItem>
+                                <ListGroupItem href="">USA</ListGroupItem>
+                                <ListGroupItem href="">UK                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ListGroupItem>
+                            </ListGroup>
+                        </Col>
+                        <Col md={9}>
+                            <FluMap />
+                        </Col>
+                    </Row>
                 </Grid>
-            </Jumbotron>
-        </div>
+            </div>
         );
     }
 }
 
 export default App;
+

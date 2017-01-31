@@ -2,7 +2,7 @@
   "name": "flu-monitor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://lahdo.github.io/flue-monitor",
   "devDependencies": {
     "eslint": "^3.13.1",
     "eslint-config-google": "^0.7.1",

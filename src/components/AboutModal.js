@@ -1,19 +1,8 @@
 import React, {Component} from 'react';
-import {Modal, OverlayTrigger, Tooltip, Popover, Button} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
 
 export default class AboutModal extends Component {
     render() {
-        const popover = (
-            <Popover id="modal-popover" title="popover">
-                very popover. such engagement
-            </Popover>
-        );
-        const tooltip = (
-            <Tooltip id="modal-tooltip">
-                wow.
-            </Tooltip>
-        );
-
         return (
             <div>
                 <Modal show={this.props.showModal}

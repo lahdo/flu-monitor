@@ -3,3 +3,24 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.map {
+  height: 500px;
+}
+
+.countryName {
+  margin-top: -4px;
+}
+
+button {
+  outline: initial;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: initial;
+}
+
+.about.btn:focus, .about.btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: initial;
+}
+

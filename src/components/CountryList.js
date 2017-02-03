@@ -1,19 +1,27 @@
 import React, {Component} from 'react';
 import {ListGroup, ListGroupItem} from 'react-bootstrap';
-// import styles from './SearchForm.module.css';
 
 export default class CountryList extends Component {
-    constructor(props) {
-        super(props);
+    isActive(country) {
+        return country === this.props.currentCountry;
     }
 
     render() {
         return (
             <div>
                 <ListGroup>
-                    <ListGroupItem href="">Poland</ListGroupItem>
-                    <ListGroupItem href="">USA</ListGroupItem>
-                    <ListGroupItem href="">UK </ListGroupItem>
+                    {
+                        this.props.countries.map(function (country, i) {
+                            return (
+                                <ListGroupItem className="countries"
+                                               onClick={() => this.props.selectCountry(country)}
+                                               key={i}
+                                               active={this.isActive(country)}>
+                                    {country.name}
+                                </ListGroupItem>
+                            );
+                        }, this)
+                    }
                 </ListGroup>
             </div>
         );

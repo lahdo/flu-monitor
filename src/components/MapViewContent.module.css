@@ -32,3 +32,16 @@
         padding-top:  90px;
     }
 }
+
+.leaflet-container {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.countries.list-group-item.active, .countries.list-group-item.active:hover, .countries.list-group-item.active:focus {
+    z-index: 2;
+    color: initial;
+    background-color: #f7f7f7;
+    border-color: #dddddd;
+}

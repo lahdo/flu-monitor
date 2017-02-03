@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import {Navbar} from 'react-bootstrap';
 
 export default class NavigationBar extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Navbar inverse fixedTop>

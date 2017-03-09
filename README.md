@@ -7,6 +7,8 @@ Twitter has been used as real time source for various public health applications
 
 I believe that this kind of data is better visualized with heatmaps then markers. This is why I have created this small application.
 
+Written in ES6 + React.
+
 Demo:
 <http://lahdo.github.io/flu-monitor>
 
